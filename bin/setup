@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+
+cd ~/.talon/user/knausj_talon
+rm -fr settings
+ln -s "${DIR}/settings" settings
+
+echo "knausj_talon_userconfig setup complete."
+echo "Quit and restart Talon to make sure the changes are detected."
